@@ -2,3 +2,145 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+body {
+  background-color: #290147;
+}
+.content {
+  background-color: #1D0A2B;
+text-align: center;
+background-size: 100%;
+padding: 90px;
+ font-color: #EDEFE2;
+
+ .h6 {
+  color: white;
+ }
+}
+.content-arbres {
+  background-color: #1D0A2B;
+text-align: center;
+background-size: 100%;
+padding: 2px;
+ font-color: #EDEFE2;
+}
+
+.slider__title {
+  font-weight: 100;
+  font-size: 2em;
+  text-align: center;
+  color: #A38166;
+}
+.slider__title-arbres {
+  font-weight: 100;
+  font-size: 1.5em;
+  text-align: center;
+  color: #A38166;
+  margin: 0;
+
+}
+.slider__little {
+  font-weight: 100;
+  font-size: 1em;
+  color: #DAA520;
+}
+.slider__lateral {
+  font-weight: 80;
+  font-size: 1em;
+  color: #DAA520;
+}
+
+.slider__presentation {
+  font-weight: 0;
+  font-size: 1em;
+  color: #A38166;
+  padding-top: 20px
+}
+.slider__presentation-petit {
+  font-weight: 10;
+  font-size: 15px;
+  color: #53493F;
+  padding-top: 2px
+}
+.slider__presentation-bis {
+  font-weight: 0;
+  font-size: 1em;
+  color: #DAA520;
+  padding-top: 20px
+}
+.links {
+  margin: 20px;
+  text-align: center;
+  background-color: #290147;
+}
+
+.opener {
+  display: inline-block;
+  padding: 10px 25px;
+  background: #1D0A2B;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  border-bottom: 1px solid #DAA520;
+  text-shadow: 0 1px 0 #2B3D73;
+}
+
+.slider__presentation-arbres {
+  font-weight: 50;
+  font-size: 1,2em;
+  color: #DAA520;
+
+  padding-top: 20px;
+  letter-spacing: 0,3em;
+  line-height: 40px;
+  position: absolute;
+  text-align: justify;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.slider__final {
+  font-weight: 0;
+  font-size: 1em;
+  color: #DAA520;
+  padding-top: 40px;
+  position: relative;
+  bottom: 30px;
+  text-align: center;
+}
+
+
+#left:target {
+  left: 0;
+  opacity: 1;
+
+}
+
+#right:target {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.slider {
+  position: fixed;
+  width: 280px;
+  padding: 20px;
+  background: #290147;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,.2);
+  transition: all .6s ease;
+}
+
+.slider--left {
+  left: -200px;
+}
+
+.slider--right {
+  right: 0;
+  transform: translateX(200px);
+}
+.shadow {
+  border-width: 180px;
+ border-color: white;
+}
+

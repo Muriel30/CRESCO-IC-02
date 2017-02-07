@@ -1,2 +1,41 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="links">
+  <a href="#left" class="opener"> About </a>
+  <a href="#right" class="opener"> Works & Press releases</a>
+</div>
+
+<div class="slider slider--left" id="left">
+  <h2 class="slider__title">About</h2>
+  <h3 class="slider__presentation"> Artiste pluridisciplinaire, Iris Crey emploie la photographie ainsi que des textes, reprises d'images et techniques mixtes. Docteur en arts visuels, elle poursuit un questionnement sur l'universalité des sentiments, la subjectivité des représentations et le statut ontologiques des images.
+  </h3>
+  <h3 class="slider__presentation-bis"> Iris Crey is a multidisciplinary artist working in photography, iconographic citations, text and mixed medias. As a doctor in visual arts, she continues an investigation on the universality of sentiments, the subjectivity of representations and the ontological status of images.
+  </h3>
+</div>
+
+<div class="slider slider--right" id="right">
+  <h2 class="slider__title">Last works exhibited</h2>
+  <h3 class= "slider__presentation"><%= link_to"Série frises photographiques Photographic friezes", pages_pairs_path %></h3>
+  <h3 class="slider__presentation"> * "Hors paires" </h3>
+  <h3 class="slider__presentation-bis"> Exhibitions:
+  <br>-"New Orleans loving Festival 2016"</br>
+  <br><Love stories "Photaumnales, Beauvais (France) ></br>
+  </h3>
+  <h3 class="slider__presentation"> * "Les Surveillants / Guards" </h3>
+  <h3 class="slider__presentation"><%= link_to"Série Impressions photographiques sur bois/Photographic print on wood", pages_trees_path %>
+  </h3>
+  <h3 class="slider__presentation"> * "Les Trois arbres / The Three trees" </h3>
+  <h3 class="slider__presentation-bis"> Exhibitions:
+  <br>-"Dendromorphies. Créer avec l'arbre", 2016</br>
+  </h3>
+</div>
+
+<div class="content">
+  <%= image_tag "dendromorphies.jpg" %>
+
+  <div class="button-bis">
+    <h6 class="slider__little"> Iris Crey, "Les Trois arbres / The Three trees"
+    Impressions photographiques sur bois (peuplier) / Photographic print on wood (poplar), 2016.
+    <br> Vue de l'exposition "Dendromorphies. Créer avec l'arbre", Espace Topographie de l'art, Paris. 26.11.2016 - 11.01.2017 </br>
+    </h6>
+  </div>
+</div>
