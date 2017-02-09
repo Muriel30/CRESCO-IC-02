@@ -1,5 +1,6 @@
 body {
   background-color: #290147;
+
 }
 .content {
   background-color: #1D0A2B;
@@ -16,8 +17,15 @@ padding: 90px;
   background-color: #1D0A2B;
 text-align: center;
 background-size: 100%;
-padding: 2px;
- font-color: #EDEFE2;
+padding: -30px;
+
+}
+.content-arbres-ter {
+  background-color: #1D0A2B;
+text-align: center;
+background-size: 100%;
+padding: 80px;
+
 }
 
 .slider__title {
@@ -228,4 +236,64 @@ padding: 2px;
 .balises {
   background-position: relative;
   padding-top: 50px;
+}
+
+.tech-slideshow {
+  height: 200px;
+  max-width: 2526px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 200px;
+  width: 2526px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 60s linear infinite;
+}
+.tech-slideshow .mover-2 {
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+  animation: moveSlideshow 90s linear infinite;
+}
+.tech-slideshow:hover .mover-2 {
+  opacity: 1;
+}
+
+@keyframes moveSlideshow {
+  100% {
+    transform: translateX(-26.6666%);
+  }
+}
+.columnsContainer, footer, header {
+  position: relative;
+  margin: 1em;
+  font-color: #A36954;
+}
+
+.leftColumn, .rightColumn, footer, header {
+  border: 1px solid  #A36954;
+  padding: 2.25em;
+}
+
+
+
+.leftColumn {
+  margin-bottom: .5em;
+
+ }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .leftColumn { margin-right: 19.5em; font-color: #A36954}
+
+  .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }
 }
