@@ -13,6 +13,7 @@ padding: 90px;
   color: white;
  }
 }
+
 .content-pairs {
   background-color: #1D0A2B;
   text-align: center;
@@ -54,6 +55,9 @@ padding: 80px;
   font-weight: 100;
   font-size: 1em;
   color: #DAA520;
+}
+.slider__little_general {
+  color: white;
 }
 .slider__lateral {
   font-weight: 80;
@@ -298,4 +302,14 @@ padding: 80px;
   .leftColumn { margin-right: 19.5em; font-color: #A36954}
 
   .rightColumn { position: absolute; top: 0; right: 0; width: 18.75em; }
+}
+
+
+.mycarousel {
+    height: 900px;
+}
+
+
+.mycarousel .item, .mycarousel .item.active, .mycarousel .mycarousel-inner {
+    height: 100%;
 }
