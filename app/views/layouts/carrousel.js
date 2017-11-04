@@ -17,4 +17,4 @@ var carousel = $(".carousel"),
       "-o-transform": "rotateY("+currdeg+"deg)",
       "transform": "rotateY("+currdeg+"deg)"
       });
-      }
+}

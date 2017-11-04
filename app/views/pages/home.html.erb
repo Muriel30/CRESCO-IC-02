@@ -1,4 +1,4 @@
-
+<html>
 <div class="links">
   <a href="#left" class="opener"> About </a>
   <a href="#right" class="opener"> Works & Press releases</a>
@@ -6,9 +6,9 @@
 
 <div class="slider slider--left" id="left">
   <h2 class="slider__title">About</h2>
-  <h3 class="slider__presentation"> Artiste pluridisciplinaire, Iris Crey emploie la photographie ainsi que des textes, reprises d'images et techniques mixtes. Docteur en arts visuels, elle poursuit un questionnement sur l'universalité des sentiments, la subjectivité des représentations et le statut ontologique des images.
+  <h3 class="slider__presentation"> Artiste pluridisciplinaire, Iris Crey emploie la photographie ainsi que des textes, reprises d'images et techniques mixtes. <strong>Docteur en arts visuels, elle poursuit un questionnement sur l'universalité des sentiments, la subjectivité des représentations et le statut ontologique des images.</strong>
   </h3>
-  <h3 class="slider__presentation-bis"> Iris Crey is a multidisciplinary artist working in photography, iconographic citations, text and mixed medias. As a doctor in visual arts, she continues an investigation on the universality of sentiments, the subjectivity of representations and the ontological status of images.
+  <h3 class="slider__presentation-bis"> <em>Iris Crey is a multidisciplinary artist working in photography, iconographic citations, text and mixed medias. As a doctor in visual arts, she continues an investigation on the universality of sentiments, the subjectivity of representations and the ontological status of images.</em>
   </h3>
   <h2 class="slider__title"> Commissionned</h2>
   <h3 class="slider__presentation"> <%= link_to"Réalisation de l'image de couverture pour le livre de Calum Watt: Blanchot and the moving image", "http://www.mhra.org.uk/images/covers/M-mi-8.jpg" %></h3>
@@ -24,7 +24,7 @@
   <%= link_to"EN", "http://www.photaumnales.fr/index.php/21-photaumnales-2016/quadrilatere-gnt-2016/92-love-stories-en#crey" %>
   <%= link_to"FR", "http://www.diaphane.org/telechargement/Photaumnales2016_DP.pdf" %>
   </h3>
-  <h3 class="slider__presentation"> * "Les Surveillants / The Guards" </h3>
+  <h3 class="slider__presentation"> "Espoirs recyclés" n°2: Exhibition "Another's treasure", Arts Council of Southwestern Indiana, 17.04.2017 - 12.05.2017 </h3> </h3>
   <h3 class="slider__presentation"><%= link_to"Série Impressions photographiques sur bois/Photographic print on wood", pages_trees_path %>
   </h3>
   <h3 class="slider__presentation"> * "Les Trois arbres / The Three trees" </h3>
@@ -34,38 +34,112 @@
   </h3>
 </div>
 
-<div class="content">
-<h2 class="slider__title_general"></h2>
-    <h1> "Espoirs recyclés", n°2</h1>
-    <h1> Actuellement présenté dans l'exposition : "Another's treasure", Arts Council of Southwestern Indiana, 17.04.2017 - 12.05.2017
-    </h1>
+<div class="wrapper2">
+<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'CREY_01.jpg' %>);">
 
+  <p><a class="button2" href="#popup1">Espoirs recyclés</a></p>
+  <p><a class="button2" href="#popup2">Recycled Hopes</a></p>
+</div>
+</div>
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Espoirs recyclés</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content2">
 
-                   <%= image_tag "CREY_01.jpg" %>
-
-
-<h2 class="slider__title">
-
-Pour la série des "Espoirs recyclés", j'ai utilisé un système d'intelligence artificielle reposant sur le "deep learning" (apprentissage profond) et les systèmes de reconnaissance d'images. Grâce à ce processus, j'ai hybridé des photos de cafés nommé "espoir" (ou "hope" en anglais) photographiés en France et à travers le monde d'après Google Street View avec des papiers recyclés dont la texture irrégulière trouble la réception de l’image. Le programme basé sur un réseau de neurones artificiels nourri d'un corpus d'images représentant souvent des animaux induit un climat onirique. Cela modifie les lieux géographiques ordinaires en espaces de rêves propices à l'apparition d'étranges créatures.
-
+Pour la série des "Espoirs recyclés", j'ai utilisé un système d'intelligence artificielle reposant sur le "deep learning" (apprentissage profond) et les systèmes de reconnaissance d'images. Grâce à ce processus, j'ai hybridé des photos de cafés nommés "espoir" (ou "hope" en anglais) photographiés en France et à travers le monde d'après Google Street View avec des papiers recyclés dont la texture irrégulière trouble la réception de l’image. Le programme basé sur un réseau de neurones artificiels nourri d'un corpus d'images représentant souvent des animaux induit un climat onirique. Cela modifie les lieux géographiques ordinaires en espaces de rêves propices à l'apparition d'étranges créatures.
+<br/>
 Les tirages photographiques de la série ont été réalisés sur des papiers recyclés avec un système d’impression directe. Je les ai réalisés artisanalement à partir de journaux.
 
-    </h2>
-    <h3 class="slider__presentation">
-In the "Recycled Hopes" series, I employed an artificial intelligence system based on deep learning and image recognition. With Google Street View, I took several photographs of cafés called "hope" - "espoir" in French -  in France and throughout the world. Through this A.I. process, I hybridized the photos with recycled paper, the irregular texture of which disrupts the easy reception of the image. The program is based on an array of artificial neurons and fed with a series of images, primarily of animals; it induces a Dream-like atmosphere. It changes the ordinary geographical places into strange, oneiric spaces, prompting the appearance of bizarre creatures.
-
-The photographic prints of the series are realized on recycled paper with « The Flatbed Direct Printing System » (variable dimmers). They were made by hand from newspapers by the artist.
-    </h3>
-<h2 class="slider__title"></h2>
-    <h1> Exposition : "Dendromorphies. Créer avec l'arbre", Paris, Topographie de l'art, 26.11.2016 - 11.01.2017
-    </h1>
-  <%= image_tag "dendromorphies.jpg" %>
-
-  <div class="button-bis">
-    <h6 class="slider__little"> Iris Crey, "Les Trois arbres / The Three trees"
-    Impressions photographiques sur bois (peuplier) / Photographic print on wood (poplar), 2016.
-    <br> Vue de l'exposition "Dendromorphies. Créer avec l'arbre", Espace Topographie de l'art, Paris. 26.11.2016 - 11.01.2017
-    </br>
-    </h6>
+    </div>
   </div>
 </div>
+
+<div id="popup2" class="overlay light">
+  <a class="cancel" href="#"></a>
+  <a class="close" href="#">&times;</a>
+  <div class="popup">
+    <h2>Recycled Hopes</h2>
+    <div class="content2">
+
+In the "Recycled Hopes" series, I employed an artificial intelligence system based on deep learning and image recognition. With Google Street View, I took several photographs of cafés called "hope" - "espoir" in French -  in France and throughout the world. Through this A.I. process, I hybridized the photos with recycled paper, the irregular texture of which disrupts the easy reception of the image. The program is based on an array of artificial neurons and fed with a series of images, primarily of animals; it induces a Dream-like atmosphere. It changes the ordinary geographical places into strange, oneiric spaces, prompting the appearance of bizarre creatures.
+<br/>
+The photographic prints of the series are realized on recycled paper with « The Flatbed Direct Printing System » (variable dimmers). They were made by hand from newspapers by the artist.
+
+    </div>
+  </div>
+</div>
+
+<div class="wrapper2">
+<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path '2cabines.png' %>);">
+  <p><a class="button2" href="#popup3">Cabines d'essayage</a></p>
+  <p><a class="button2" href="#popup4">Fitting rooms</a></p>
+</div>
+</div>
+<div id="popup3" class="overlay">
+  <div class="popup">
+    <h2>Cabines d'essayage</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content2">
+
+<em>« Le moi est une cabine d'essayage, on s'y enferme avec son miroir pour y choisir son image »
+Jean-François Comte, revue "Vagabondages"</em>
+
+<br/>
+
+  Franchir l’interdiction de photographier qui règne dans le monde clôt des cabines d’essayages, c’est révéler en partie le mystère qui imprègne ce lieu de cristallisation des fantasmes : en 1969, Edgar Morin publie notamment une étude sociologique sur la rumeur selon laquelle dans les magasins, les cabines d’essayages seraient un lieu d’enlèvements. C’est aussi un lieu intimiste où les regards furtifs tentent parfois d’accéder derrière l’embrasure d’un rideau à une vue partielle sur l’essayage en cours. Espace fermé comme le serait une chambre photographique, la cabine d’essayage est une métaphore qui symbolise le moment d’une révélation. A présent envahi de caméras de surveillance cachées, il pose question sur une société hypermoderne dite « du regard » et sur l’identité de l’<em>Homo video </em>actuel. <strong> Après m’être photographiée dans le miroir des cabines, j’ai superposé les têtes de mes dessins d’enfant (réalisés entre 5 et 7 ans), comme une projection de moi-même. </strong> Il en résulte un défilé d’images volées, spontanées, prises sur le vif, avant qu’une vendeuse ne surgisse, hors cadre, derrière le rideau des apparences. Ces visages intemporels canalisent le rythme effréné de la mode. Les têtes rapidement posées, s’échangent pour donner l’effet d’une consommation d’images.
+    </div>
+  </div>
+</div>
+
+<div id="popup4" class="overlay light">
+  <a class="cancel" href="#"></a>
+  <div class="popup">
+    <h2>Fitting rooms</h2>
+    <div class="content2">
+<em>"The self is a dressing room, you lock yourself in it with your mirror to choose your image."
+Jean-François Comte,"Vagabondage" magazine.</em>
+
+<br/>
+  In 1969, Edgar Morin published a sociological study on the rumour that in stores, dressing rooms were a place of abduction. It is also an intimate place where stealthy glances sometimes try to gain access behind the curtainway to a partial view of the current fitting. Closed space like a photographic chamber, the fitting room is a metaphor that symbolizes the moment of revelation. Now invaded by hidden surveillance cameras, he asks about a hypermodern society known as "du regard" and the identity of the current <em>Homo video</em>. <strong> After I photographed myself in the cabin mirror, I superimposed the heads of my children's drawings (made between 5 and 7 years), like a projection of myself. </strong> The result is a procession of spontaneous, stolen, lively images before a saleswoman emerges, out of frame, behind the curtain of appearances. These timeless faces channel the fast-paced rhythm of fashion. The heads are quickly placed and exchanged to give the effect of consuming images.
+    </div>
+  </div>
+</div>
+
+<div class="wrapper2">
+<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%),  url(<%= asset_path 'dendromorphies.jpg' %>);">
+  <p><a class="button2" href="#popup5">Les Trois arbres</a></p>
+  <p><a class="button2" href="#popup6">The Three Trees</a></p>
+</div>
+</div>
+<div id="popup5" class="overlay">
+  <div class="popup">
+    <h2>Les Trois arbres</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content2">
+<h2>Iris Crey, "Les Trois arbres / The Three trees"
+    Impressions photographiques sur bois (peuplier) / Photographic print on wood (poplar), 2016.</h2>
+
+Cette série prend appui sur le « Test des 3 arbres » (Koch / Stora), méthode projective utilisée en psychologie pour dévoiler des aspects inaperçus de la personnalité du patient. Trois dessins sont réalisés successivement sur une page blanche, format A4. J’ai détourné cette méthode en reprenant certains visuels extraits de l’iconothèque des psychanalystes pour leur trouver des correspondances photographiques. Le rapport à la mimesis est inversé : désormais, la photographie ne représente plus le réel mais elle doit coïncider cette fois avec l’image mentale.
+Formellement, le dessin se greffe aux photos comme un filtre subjectif. <br/> Le triptyque reprend la répartition initiale du test : le premier visuel correspond à l'arbre réel ; il montre l'image à laquelle se superposent les représentations que l'on projette (schémas et dessins anatomiques, icônes de téléphone, logos, arbres généalogiques, calligraphies et autres signifiants langagiers, images mentales sous la forme des dessins d'arbres imaginés par les patients et prélevés dans l'iconothèque des psychanalystes). La deuxième montre la photo d'origine prélevée dans ma banque d’images personnelles, non recadrée, non retouchée, incarnant l'arbre du Moi. Enfin, l'arbre du rêve (le troisième) est extrait d'une iconographie annexe (par exemple des arbres modèles des pépinières, arbres d'artistes, arbres porteurs de croyances, d'idéaux technologiques ou de rituels païens).
+Chaque triptyque photographique constitue une oeuvre autonome. <br/><em>Détails: L'Arbre amoureux / L'Arbre de la liberté / L'Arbre tatoué / L'Arbre de vie / L'Arbre de la connaissance / L'Arbre mélancolique / L'Arbre xylophage / L'Arbre des pendus / L'Arbre métamorphique / L'Arbre utopique / L'Arbre paradisiaque / L'Arbre fécond / L'Arbre immortel / L'Arbre protecteur ou protégé / L'Arbre guérisseur / L'Arbre fécond / L'Arbre xylophage. </em>
+
+    </div>
+  </div>
+</div>
+
+<div id="popup6" class="overlay light">
+  <a class="cancel" href="#"></a>
+  <div class="popup">
+   The Three Trees
+    <div class="content2">
+    <h2>
+Vue de l'exposition "Dendromorphies. Créer avec l'arbre", Espace Topographie de l'art, Paris. 26.11.2016 - 11.01.2017 </h2>
+En jouant sur la verticalité, la série des "Trois arbres" applique le principe de croissance à l’image, en prolongeant la représentation mentale pour affirmer la singularité de chaque regard, à la manière dont on ajouterait un préfixe et un suffixe à la racine d’un mot. Ce sont des œuvres épiphytes puisqu’elles prennent pour support d’autres représentations sans les altérer. Le fait de conférer des sentiments ou des qualités aux arbres leur donne un caractère anthropomorphique, reflétant les passions et les aspirations des êtres humains qui y réfugient leurs espoirs.
+    </div>
+  </div>
+</div>
+</div>
+
+
+</html>
