@@ -33,7 +33,23 @@
    <%= link_to"Dossier de presse", "http://www.topographiedelart.fr/assets/files/dossier_de_presse/Dendromorphies-Dossier-Presse.pdf" %>
   </h3>
 </div>
+<div class="wrapper2">
+<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'abstraction.png' %>);">
 
+  <p><a class="button2" href="#popup7">Abstraction</a></p>
+
+</div>
+</div>
+<div id="popup7" class="overlay">
+  <div class="popup">
+    <h2>Abstraction</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content7">
+Aquarelle sur papier
+
+    </div>
+  </div>
+</div>
 <div class="wrapper2">
 <div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'CREY_01.jpg' %>);">
 
@@ -70,9 +86,9 @@ The photographic prints of the series are realized on recycled paper with « The
   </div>
 </div>
 
-<div class="wrapper2">
-<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path '2cabines.png' %>);">
-  <p><a class="button2" href="#popup3">Cabines d'essayage</a></p>
+<%#<div class="wrapper2">
+<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path '2cabines.png' %>
+  <%#<p><a class="button2" href="#popup3">Cabines d'essayage</a></p>
   <p><a class="button2" href="#popup4">Fitting rooms</a></p>
 </div>
 </div>
@@ -104,7 +120,7 @@ Jean-François Comte,"Vagabondage" magazine.</em>
   In 1969, Edgar Morin published a sociological study on the rumour that in stores, dressing rooms were a place of abduction. It is also an intimate place where stealthy glances sometimes try to gain access behind the curtainway to a partial view of the current fitting. Closed space like a photographic chamber, the fitting room is a metaphor that symbolizes the moment of revelation. Now invaded by hidden surveillance cameras, he asks about a hypermodern society known as "du regard" and the identity of the current <em>Homo video</em>. <strong> After I photographed myself in the cabin mirror, I superimposed the heads of my children's drawings (made between 5 and 7 years), like a projection of myself. </strong> The result is a procession of spontaneous, stolen, lively images before a saleswoman emerges, out of frame, behind the curtain of appearances. These timeless faces channel the fast-paced rhythm of fashion. The heads are quickly placed and exchanged to give the effect of consuming images.
     </div>
   </div>
-</div>
+</div>-%>
 
 <div class="wrapper2">
 <div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%),  url(<%= asset_path 'dendromorphies.jpg' %>);">
@@ -112,6 +128,7 @@ Jean-François Comte,"Vagabondage" magazine.</em>
   <p><a class="button2" href="#popup6">The Three Trees</a></p>
 </div>
 </div>
+
 <div id="popup5" class="overlay">
   <div class="popup">
     <h2>Les Trois arbres</h2>
@@ -139,7 +156,27 @@ En jouant sur la verticalité, la série des "Trois arbres" applique le principe
     </div>
   </div>
 </div>
-</div>
 
+<div class="wrapper2">
+<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'coeur.jpg' %>);">
+
+  <p><a class="button2" href="#popup8">Planches lexicographiques</a></p>
+
+</div>
+</div>
+<div id="popup8" class="overlay">
+  <div class="popup">
+    <h2>Planches lexicographiques : "La Main sur le coeur" (gauche) / "Le bouche à oreilles" (droite). Techniques mixtes, 2017</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content7">
+
+  <%= image_tag "coeur.jpg", height: 700, crop: :fill
+  %>
+  <%= image_tag "bouche.jpg",height: 400, crop: :fill
+  %>
+
+    </div>
+  </div>
+</div>
 
 </html>
