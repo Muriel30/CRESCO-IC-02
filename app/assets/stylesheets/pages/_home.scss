@@ -1,6 +1,5 @@
 body {
   background-color: #020003;
-  margin: 80;
   padding-top: 1em ;
   padding-right: 15em;
   padding-left: 15em;
@@ -42,8 +41,8 @@ html {
 }
 
 .slider__title {
-  font-weight: 100;
-  font-size: 2em;
+  font-weight: 60;
+  font-size: 1em;
   text-align: center;
   color: white;
 }
@@ -114,8 +113,9 @@ html {
 .links {
   margin: 20px;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.2em;
   background-color: #020003;
+  color: #500080;
 }
 
 .opener {
@@ -156,6 +156,7 @@ html {
   left: 0;
   text-decoration: none;
   opacity: 1;
+  font-color: #F8F8FF;
 }
 
 #right:target {
@@ -168,6 +169,7 @@ html {
   width: 30rem;
   padding: 20px;
   background: #020003;
+  color: #F8F8FF;
   top: 0;
   bottom: 0;
   opacity: 0;
@@ -177,6 +179,7 @@ html {
 
 .slider--left {
   left: -200px;
+  color: #F8F8FF;
 }
 
 .slider--right {
@@ -389,12 +392,12 @@ html {
 }
 
 .popup {
-  margin: 75px auto;
+  margin: 4em auto;
   padding: 20px;
   background: black;
   border: 1px solid #666;
-  width: 85rem;
-  font-color: white;
+  width: 65rem;
+  font-color: #F8F8FF;
   box-shadow: 0 0 50px rgba(0,0,0,0.5);
   position: relative;
   .light & {
@@ -403,7 +406,7 @@ html {
   }
   h2 {
     margin-top: 0;
-    color: #020003;
+    color: #F8F8FF;
     font-family: "Trebuchet MS", Tahoma, Arial, sans-serif;
   }
   .close {
@@ -423,9 +426,11 @@ html {
     }
   }
   .content2 {
-    max-height: 400px;
+    color: #F8F8FF;
+    padding: 1rem;
+    line-height: 150%;
     overflow: auto;
-    font-size: 2em;
+    font-size: 1.2em;
   }
   p {
     margin: 0 0 1em;
@@ -437,11 +442,11 @@ html {
 
 .wrapper2 {
   width: 65rem;
-  height: 58rem;
+  height: 55rem;
   max-width: 100%;
   margin: 4em auto;
   border-radius: 15px;
-background-position: center center;
+  background-position: center center;
   text-align: center;
 }
 
