@@ -13,6 +13,7 @@
      <%= javascript_include_tag 'application' %>
 
     <%= yield %>
+
 <script>
       var carousel = $(".carousel"),
       currdeg  = 0;
@@ -33,7 +34,56 @@
       });
       }
     </script>
+<script>
+$('.ml3').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
 
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 250,
+    delay: function(el, i) {
+      return 150 * (i+1)
+    }
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 50000,
+    easing: "easeOutExpo",
+    delay: 100
+  });
+</script>
+
+<script>
+$('.ml12').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 11200,
+    delay: function(el, i) {
+      return 500 + 30 * i;
+    }
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 11100,
+    delay: function(el, i) {
+      return 100 + 30 * i;
+    }
+  });
+  </script>
     <%= render 'shared/footer' %>
   </body>
 </html>

@@ -1,7 +1,9 @@
 body {
   background-color: #020003;
-  margin: 30 auto;
-  padding: 4em 1em;
+  margin: 80;
+  padding-top: 1em ;
+  padding-right: 15em;
+  padding-left: 15em;
 }
 
 html {
@@ -15,7 +17,6 @@ html {
   padding: 90px;
   font-color: white;
 }
-
 
 .content-pairs {
   background-color: #020003;
@@ -153,6 +154,7 @@ html {
 
 #left:target {
   left: 0;
+  text-decoration: none;
   opacity: 1;
 }
 
@@ -336,19 +338,10 @@ html {
     height: 100%;
 }
 
-.wrapper2 {
-  width: 85rem;
-  height: 58rem;
-  margin: 4em auto;
-  border-radius: 15px;
-background-position: center center;
-  text-align: center;
-}
-
 .button2 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 2em;
-
+  text-decoration: none;
   padding: 5px 10px;
 
   border: 1px solid white;
@@ -376,7 +369,7 @@ background-position: center center;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0,0.5);
+  background: black;
   transition: opacity 200ms;
   visibility: hidden;
   opacity: 0;
@@ -398,9 +391,10 @@ background-position: center center;
 .popup {
   margin: 75px auto;
   padding: 20px;
-  background: #fff;
+  background: black;
   border: 1px solid #666;
   width: 85rem;
+  font-color: white;
   box-shadow: 0 0 50px rgba(0,0,0,0.5);
   position: relative;
   .light & {
@@ -440,15 +434,40 @@ background-position: center center;
     }
   }
 }
+
+.wrapper2 {
+  width: 65rem;
+  height: 58rem;
+  max-width: 100%;
+  margin: 4em auto;
+  border-radius: 15px;
+background-position: center center;
+  text-align: center;
+}
+
 .images {
   min-height: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
+  background-size: cover;
 }
 
 .p {
   background-color: black;
 text-align: center;
 padding-top: 50px;
+}
+
+.ml12 {
+  font-weight: 500;
+  font-size: 3em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 2em;
 }

@@ -1,7 +1,7 @@
 <html>
 <div class="links">
-  <a href="#left" class="opener"> About </a>
-  <a href="#right" class="opener"> Works & Press releases</a>
+  <a href="#left" style= "text-decoration: none"; class="opener"> About </a>
+  <a href="#right" style= "text-decoration: none"; class="opener"> Works & Press releases</a>
 </div>
 
 <div class="slider slider--left" id="left">
@@ -11,7 +11,7 @@
   <h3 class="slider__presentation-bis"> <em>Iris Crey is a multidisciplinary artist working in photography, iconographic citations, text and mixed medias. As a doctor in visual arts, she continues an investigation on the universality of sentiments, the subjectivity of representations and the ontological status of images.</em>
   </h3>
   <h2 class="slider__title"> Commissionned</h2>
-  <h3 class="slider__presentation"> <%= link_to"Réalisation de l'image de couverture pour le livre de Calum Watt: Blanchot and the moving image", "http://www.mhra.org.uk/images/covers/M-mi-8.jpg" %></h3>
+  <h3 class="slider__presentation" style= "text-decoration: none"> <%= link_to"Réalisation de l'image de couverture pour le livre de Calum Watt: Blanchot and the moving image", "http://www.mhra.org.uk/images/covers/M-mi-8.jpg" %></h3>
 </div>
 
 <div class="slider slider--right" id="right">
@@ -33,34 +33,20 @@
    <%= link_to"Dossier de presse", "http://www.topographiedelart.fr/assets/files/dossier_de_presse/Dendromorphies-Dossier-Presse.pdf" %>
   </h3>
 </div>
-<div class="wrapper2">
-<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'abstraction.png' %>);">
 
-  <p><a class="button2" href="#popup7">Abstraction</a></p>
-
-</div>
-</div>
-<div id="popup7" class="overlay">
-  <div class="popup">
-    <h2>Abstraction</h2>
-    <a class="close" href="#">&times;</a>
-    <div class="content7">
-Aquarelle sur papier
-
-    </div>
-  </div>
-</div>
 <div class="wrapper2">
 <div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'CREY_01.jpg' %>);">
 
-  <p><a class="button2" href="#popup1">Espoirs recyclés</a></p>
-  <p><a class="button2" href="#popup2">Recycled Hopes</a></p>
+  <a href="#popup1"; h1 class="ml12"> Espoirs recyclés</a>
+  <br>
+  <a href="#popup2"; h1 class="ml12"> Recycled Hopes</a>
+  </br>
 </div>
 </div>
-<div id="popup1" class="overlay">
+<div id="popup1" style= "text-decoration: none"; class="overlay">
   <div class="popup">
     <h2>Espoirs recyclés</h2>
-    <a class="close" href="#">&times;</a>
+    <a class="close" style= "text-decoration: none"; href="#">&times;</a>
     <div class="content2">
 
 Pour la série des "Espoirs recyclés", j'ai utilisé un système d'intelligence artificielle reposant sur le "deep learning" (apprentissage profond) et les systèmes de reconnaissance d'images. Grâce à ce processus, j'ai hybridé des photos de cafés nommés "espoir" (ou "hope" en anglais) photographiés en France et à travers le monde d'après Google Street View avec des papiers recyclés dont la texture irrégulière trouble la réception de l’image. Le programme basé sur un réseau de neurones artificiels nourri d'un corpus d'images représentant souvent des animaux induit un climat onirique. Cela modifie les lieux géographiques ordinaires en espaces de rêves propices à l'apparition d'étranges créatures.
@@ -81,6 +67,23 @@ Les tirages photographiques de la série ont été réalisés sur des papiers re
 In the "Recycled Hopes" series, I employed an artificial intelligence system based on deep learning and image recognition. With Google Street View, I took several photographs of cafés called "hope" - "espoir" in French -  in France and throughout the world. Through this A.I. process, I hybridized the photos with recycled paper, the irregular texture of which disrupts the easy reception of the image. The program is based on an array of artificial neurons and fed with a series of images, primarily of animals; it induces a Dream-like atmosphere. It changes the ordinary geographical places into strange, oneiric spaces, prompting the appearance of bizarre creatures.
 <br/>
 The photographic prints of the series are realized on recycled paper with « The Flatbed Direct Printing System » (variable dimmers). They were made by hand from newspapers by the artist.
+
+    </div>
+  </div>
+</div>
+
+<div class="wrapper2">
+<div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'abstraction.png' %>);">
+<a href="#popup7"; h1 class="ml12"> Abstraction</a>
+
+</div>
+</div>
+<div id="popup7" class="overlay">
+  <div class="popup">
+    <h2>Abstraction</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content7">
+Aquarelle sur papier
 
     </div>
   </div>
@@ -124,8 +127,10 @@ Jean-François Comte,"Vagabondage" magazine.</em>
 
 <div class="wrapper2">
 <div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%),  url(<%= asset_path 'dendromorphies.jpg' %>);">
-  <p><a class="button2" href="#popup5">Les Trois arbres</a></p>
-  <p><a class="button2" href="#popup6">The Three Trees</a></p>
+<a href="#popup5"; h1 class="ml12"> Les Trois arbres</a>
+<br>
+<a href="#popup6"; h1 class="ml12"> The Three Trees</a>
+</br>
 </div>
 </div>
 
@@ -159,12 +164,12 @@ En jouant sur la verticalité, la série des "Trois arbres" applique le principe
 
 <div class="wrapper2">
 <div class="images" style="background-image: linear-gradient(225deg, rgba(0,101,168,0.2) 20%, rgba(241,196,15,0.5) 140%), url(<%= asset_path 'coeur.jpg' %>);">
-
-  <p><a class="button2" href="#popup8">Planches lexicographiques</a></p>
+<a href="#popup8"; h1 class="ml12"> Planches lexicographiques</a>
 
 </div>
 </div>
-<div id="popup8" class="overlay">
+
+<div id="popup8" style= "text-decoration: none"; class="overlay">
   <div class="popup">
     <h2>Planches lexicographiques : "La Main sur le coeur" (gauche) / "Le bouche à oreilles" (droite). Techniques mixtes, 2017</h2>
     <a class="close" href="#">&times;</a>
@@ -172,11 +177,11 @@ En jouant sur la verticalité, la série des "Trois arbres" applique le principe
 
   <%= image_tag "coeur.jpg", height: 700, crop: :fill
   %>
-  <%= image_tag "bouche.jpg",height: 400, crop: :fill
+  <%# image_tag "bouche.jpg",height: 400, crop: :fill
   %>
 
     </div>
   </div>
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </html>
